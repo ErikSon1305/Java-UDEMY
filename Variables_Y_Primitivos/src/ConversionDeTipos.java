@@ -37,6 +37,11 @@ public class ConversionDeTipos {
         long l = i;
         System.out.println("l = " + l);
         System.out.println("Valor maximo que puede soportar el Short es de: " + Short.MAX_VALUE);
+        
+        int otroNumeroInt = 100;
+        System.out.println("otroNumeroInt = " + otroNumeroInt);
+        char b = (char) i;
+        System.out.println("b = " + b);
 
    }
 }
