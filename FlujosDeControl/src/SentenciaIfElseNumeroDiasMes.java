@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class SentenciaIfElseNumeroDiasMes {
     public static void main(String[] args) {
 
