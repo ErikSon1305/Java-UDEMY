@@ -13,9 +13,7 @@ public class EjemploArreglosBuscarNumero {
         System.out.println("\r\nIngrese el numero que quiere buscar: ");
         int numero = s.nextInt();
         int i = 0;
-        while (i < a.length && a[i] != numero) {
-            i++;
-        }
+        for (; i < a.length && a[i] != numero; i++) {}
         if (i == a.length){
             System.out.println("No encontro el numero");
         } else if (a[i] == numero) {
