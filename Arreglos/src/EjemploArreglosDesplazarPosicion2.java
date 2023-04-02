@@ -4,19 +4,24 @@ public class EjemploArreglosDesplazarPosicion2 {
     public static void main(String[] args) {
         int [] a = new int [10];
         Scanner s = new Scanner(System.in);
-        int auxiliar;
-        for (int i = 0; i < a.length; i++){
+        int elemento, posicion;
+        for (int i = 0; i < a.length - 1; i++){
             System.out.print("Ingrese el numero: ");
             a[i] = s.nextInt();
 
         }
 
         System.out.println();
-        auxiliar = a[a.length-1];
-        for (int i = a.length - 2; i >= 0; i--){
+
+        System.out.println("Nuevo elemnto:");
+        elemento = s.nextInt();
+
+        System.out.println("Posicion donde agregar (de 0 a 9)");
+        posicion = s.nextInt();
+        for (int i = a.length - 2; i >= posicion; i--){
             a[i + 1] = a[i];
         }
-        a[0] = auxiliar;
+        a[posicion] = elemento;
 
         System.out.println("Arreglo:");
         for (int i = 0; i < a.length; i++){
